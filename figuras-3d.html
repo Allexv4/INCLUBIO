@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras 3D - INCLUBIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              inclubio: {
+                purple: "#8B5CF6",
+                pink: "#EC4899",
+                green: "#10B981",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-white text-slate-900">
+    <header class="w-full py-6 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto flex items-center gap-4">
+        <a
+          href="index.html"
+          class="flex items-center justify-center w-10 h-10 rounded-full bg-inclubio-green/10 text-inclubio-green transition-all duration-300 hover:scale-110"
+        >
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+        </a>
+        <h1 class="text-2xl md:text-3xl font-bold text-inclubio-green">
+          Projetos e Animações 3D
+        </h1>
+      </div>
+    </header>
+
+    <main
+      class="max-w-6xl mx-auto px-4 md:px-8 py-8 animate-[fadeIn_0.5s_ease-out]"
+    >
+      <div class="animate-scale-in">
+        <div
+          class="flex flex-col md:flex-row items-center gap-8 mb-12 p-8 rounded-2xl bg-inclubio-green/5"
+        >
+          <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0">
+            <img
+              src="./assets/figuras3d.webp"
+              alt="Figuras 3D"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-inclubio-green mb-4">
+              Modelos 3D e Animações Interativas
+            </h2>
+            <p class="text-slate-600 leading-relaxed">
+              Explore modelos tridimensionais e animações interativas que
+              facilitam a compreensão de estruturas e processos complexos da
+              biofísica, com enfoque na visualização e na interpretação tátil
+              dos fenômenos.
+            </p>
+          </div>
+        </div>
+
+        <h2
+          class="text-3xl font-bold text-center text-inclubio-green mb-8 mt-12"
+        >
+          Animações de Estruturas e Sistemas
+        </h2>
+
+        <div
+          class="mb-12 p-6 md:p-8 rounded-2xl bg-white shadow-xl border-t-4 border-inclubio-green/50"
+        >
+          <h3 class="text-3xl font-bold text-inclubio-green mb-2">
+            Sistema Circulatório - Coração
+          </h3>
+          <p class="text-slate-700 font-semibold mb-4">
+            Projeto 3D de fluxo sanguíneo do coração, visual e tátil.
+          </p>
+
+          <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-4">
+            <video
+              controls
+              loop
+              muted
+              autoplay
+              class="w-full h-full object-cover"
+            >
+              <source src="./assets/coracao.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+
+          <p class="text-sm text-slate-500 italic">
+            Este modelo 3D demonstra o <strong>fluxo sanguíneo</strong> e a
+            <strong>estrutura do coração</strong>, auxiliando a compreensão
+            visual e tátil da circulação.
+          </p>
+        </div>
+
+        <div
+          class="mb-12 p-6 md:p-8 rounded-2xl bg-white shadow-xl border-t-4 border-inclubio-green/50"
+        >
+          <h3 class="text-3xl font-bold text-inclubio-green mb-2">
+            Sistema Auditivo - Ouvido
+          </h3>
+          <p class="text-slate-700 font-semibold mb-4">
+            Projeto 3D de transporte e processamento do som através do ouvido.
+          </p>
+
+          <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-4">
+            <video
+              controls
+              loop
+              muted
+              autoplay
+              class="w-full h-full object-cover"
+            >
+              <source src="./assets/auditivo.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+
+          <p class="text-sm text-slate-500 italic">
+            Animação 3D que detalha as estruturas da orelha e como o
+            <strong>transporte e processamento do som</strong> ocorrem do
+            tímpano até o sistema nervoso central.
+          </p>
+        </div>
+
+        <div
+          class="mb-12 p-6 md:p-8 rounded-2xl bg-white shadow-xl border-t-4 border-inclubio-green/50"
+        >
+          <h3 class="text-3xl font-bold text-inclubio-green mb-2">
+            Membrana Plasmática - Potencial de Ação
+          </h3>
+          <p class="text-slate-700 font-semibold mb-4">
+            Projeto 3D de transporte de íons através da membrana celular, visual
+            e tátil para compreensão de processo complexo do potencial de
+            membranas.
+          </p>
+
+          <div class="aspect-video bg-gray-200 rounded-lg overflow-hidden mb-4">
+            <video
+              controls
+              loop
+              muted
+              autoplay
+              class="w-full h-full object-cover"
+            >
+              <source src="./assets/seila.mp4" type="video/mp4" />
+              Seu navegador não suporta a tag de vídeo.
+            </video>
+          </div>
+
+          <p class="text-sm text-slate-500 italic">
+            Animação crucial que ilustra o
+            <strong>transporte de íons</strong> através da
+            <strong>membrana celular</strong>, fundamental para a compreensão do
+            <strong>potencial de ação</strong> e da comunicação celular, com
+            recursos visuais e táteis.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
